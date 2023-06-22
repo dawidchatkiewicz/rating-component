@@ -1,0 +1,131 @@
+:root {
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(215, 10%, 32%);
+	--dark-blue: hsl(213, 19%, 18%);
+	--very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	font-family: 'Overpass', sans-serif;
+	background-color: var(--very-dark-blue);
+	color: var(--white);
+	margin: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+h1, h2 {
+	margin: 2rem 0 1rem;
+}
+
+p {
+	line-height: 1.8;
+	color: var(--light-grey);
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+button {
+	font-family: inherit;
+}
+
+.btn {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--medium-grey);
+	color: #fff;
+	padding-top: 0.2rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.btn:hover {
+	background-color: var(--orange);
+}
+
+.btn:focus {
+	background-color: var(--light-grey);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem 0 0.8rem 0;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+background-color: #fff;
+color: var(--orange);
+}
+
+.main-container,
+.thank-you {
+	background-color: var(--dark-blue);
+	padding: 1.5rem;
+	border-radius: 0.65rem;
+    max-width: 440px;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.star {
+	background-color: var(--medium-grey);
+	padding: 0.5rem;
+	border-radius: 50%;
+}
+
+.thank-you-image {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.custom {
+    background-color: var(--medium-grey);
+    border-radius: 30px;
+    color: var(--orange);
+    padding: 6px 40px 4px 40px;
+    margin-bottom: 2re;
+}
+
+.hidden {
+    display: none;
+}
+
+
